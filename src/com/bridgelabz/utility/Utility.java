@@ -113,6 +113,32 @@ public class Utility {
 			}
 			
 		}
+		
+		
+
+		public static void harmonicNumber(int number) {
+
+			if(number > 0)
+			{
+				System.out.println("Valid input for finding Harmonic Number.");
+				
+				float harmonic =1;
+		
+				for(int i=2; i<=number; i++)
+				{
+					harmonic += (float)1/i;
+					
+				}
+				
+				System.out.println("Harmonic Number is"+harmonic);
+			}
+			else
+			{
+				System.out.println("Invalid Input. Please enter number not equal to 0");
+			}
+			
+		}
+		
 
 
 		
