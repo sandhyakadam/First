@@ -36,10 +36,11 @@ public class Utility {
 		//Flipcoin
 
 		public static void flipcoin(int flips) {
-		// TODO Auto-generated method stub
+		
+		int count=0;
 		int head=0;
 		int tail=0;
-		int count = 1;
+		//int count = 1;
 		double randomnumber = 0.0;
 		float percentage_head = 0.0f, percentage_tail=0.0f;
 		if(flips>0)
@@ -77,5 +78,43 @@ public class Utility {
 
 		//scanner.close();
 		}
+
+	
+
+		public static void leapyear(int year) {
+			
+			int num=year;
+			int count = 0;
+			while(num!=0)
+			{
+				num = num / 10;
+				count++;
+				
+			}
+			if(count == 4)
+			{
+				System.out.println("Entered number is of 4 digits.");
+				//Condition to check year is leap year or not
+				if((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+				{
+
+					System.out.println("Entered year is leap year");
+				}
+				else 
+				{
+		
+					System.out.println("Entered year is not leap year:");
+				}
+				
+			}
+			else
+			{
+				System.out.println("Invalid Input! Please Enter 4 digits number.");
+			}
+			
+		}
+
+
+		
 		
 }
