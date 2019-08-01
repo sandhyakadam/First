@@ -1,6 +1,6 @@
 /**********************************************************************
  * 
- * Purpose:     Replace String with Username.
+ * Purpose: Calculating Euclidean distance.
  * 
  * @author  Sandhya Kadam.
  * @version 1.0
@@ -13,19 +13,19 @@ import java.util.Scanner;
 
 import com.bridgelabz.utility.Utility;
 
-public class ReplaceString {
-	
+public class Distance {
+
 	public static void main(String[] args) {
-        
+    
 		Utility utility = new Utility();
 		Scanner scanner = new Scanner(System.in);
-
-	    String originalString = "Hello <<UserName>>, How are you?";
-
-		System.out.println("Enter your Name:");
-		String name = scanner.next();
-           
-		utility.ReplaceString(originalString, name);
+		System.out.println("Enter two number to calculate a Distance : ");
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+        utility.distance(x,y);
 		scanner.close();
+
+
 	}
+
 }
